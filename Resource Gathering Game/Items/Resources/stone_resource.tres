@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ResourceItem" load_steps=3 format=3 uid="uid://m2d40tnx86yi"]
+
+[ext_resource type="Script" path="res://Items/Resources/ResourceItem.gd" id="1_inncy"]
+[ext_resource type="Texture2D" uid="uid://olxkqp1a77c2" path="res://Art/Pickups/stone-pickup.png" id="2_gyg5e"]
+
+[resource]
+script = ExtResource("1_inncy")
+display_name = "Stone Resource"
+texture = ExtResource("2_gyg5e")

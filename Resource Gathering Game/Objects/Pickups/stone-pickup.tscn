@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://bgc2uksreyrii"]
+
+[ext_resource type="Texture2D" uid="uid://olxkqp1a77c2" path="res://Art/Pickups/stone-pickup.png" id="1_6kitc"]
+[ext_resource type="Script" path="res://Objects/Pickups/pickup.gd" id="1_av08v"]
+[ext_resource type="Resource" uid="uid://m2d40tnx86yi" path="res://Items/Resources/stone_resource.tres" id="2_7rio7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uk7m5"]
+radius = 7.07107
+
+[node name="Pickup" type="Area2D"]
+z_index = -5
+script = ExtResource("1_av08v")
+resource_type = ExtResource("2_7rio7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6kitc")
+
+[node name="Pickup_col" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uk7m5")

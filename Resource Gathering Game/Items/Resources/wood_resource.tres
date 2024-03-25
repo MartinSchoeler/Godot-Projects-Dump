@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="ResourceItem" load_steps=3 format=3 uid="uid://ccqxika5xr3ev"]
+
+[ext_resource type="Script" path="res://Items/Resources/ResourceItem.gd" id="1_f2htt"]
+[ext_resource type="Texture2D" uid="uid://dobmqj3ki483t" path="res://Art/Pickups/wood-pickup.png" id="2_h1sfh"]
+
+[resource]
+script = ExtResource("1_f2htt")
+display_name = "Wood"
+texture = ExtResource("2_h1sfh")

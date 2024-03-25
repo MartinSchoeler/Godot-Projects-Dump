@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://d1bwantclhwah"]
+
+[ext_resource type="Script" path="res://Objects/Pickups/pickup.gd" id="1_hm4u5"]
+[ext_resource type="Resource" uid="uid://ccqxika5xr3ev" path="res://Items/Resources/wood_resource.tres" id="2_hhys6"]
+[ext_resource type="Texture2D" uid="uid://dobmqj3ki483t" path="res://Art/Pickups/wood-pickup.png" id="3_uobw2"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_uk7m5"]
+
+[node name="Pickup" type="Area2D"]
+z_index = -5
+script = ExtResource("1_hm4u5")
+resource_type = ExtResource("2_hhys6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("3_uobw2")
+
+[node name="Pickup_col" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_uk7m5")
