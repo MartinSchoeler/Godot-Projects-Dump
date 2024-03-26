@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 class_name Player
 
-@export var speed: float = 300.0
+@export var normalSpeed: float = 100.0
 
 @onready var animation_tree: AnimationTree = $AnimationTree
 
@@ -20,10 +20,10 @@ func _physics_process(delta):
 	direction = Input.get_vector("move_left","move_right","move_up","move_down").normalized()
 
 	if direction:
-		velocity = direction * speed
+		velocity = direction * normalSpeed
 	else:
 		velocity = Vector2.ZERO
-
+	print(velocity, normalSpeed, direction)
 	move_and_slide()
 
 func update_animation_params():

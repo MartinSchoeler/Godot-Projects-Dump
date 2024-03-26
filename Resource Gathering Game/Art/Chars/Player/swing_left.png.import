@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i4qua325sp6i"
-path="res://.godot/imported/BODY_skeleton_slash.png-9063da636a3cfca0fdcc334552a8516d.ctex"
+uid="uid://b336lefb7o5uk"
+path="res://.godot/imported/swing_left.png-5d2fe713da4db06bf742510cc7952175.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Chars/Player/BODY_skeleton_slash.png"
-dest_files=["res://.godot/imported/BODY_skeleton_slash.png-9063da636a3cfca0fdcc334552a8516d.ctex"]
+source_file="res://Art/Chars/Player/swing_left.png"
+dest_files=["res://.godot/imported/swing_left.png-5d2fe713da4db06bf742510cc7952175.ctex"]
 
 [params]
 
