@@ -23,7 +23,6 @@ func _physics_process(delta):
 		velocity = direction * normalSpeed
 	else:
 		velocity = Vector2.ZERO
-	print(velocity, normalSpeed, direction)
 	move_and_slide()
 
 func update_animation_params():
@@ -35,11 +34,11 @@ func update_animation_params():
 		animation_tree["parameters/conditions/idle"] = false
 		animation_tree["parameters/conditions/is_moving"] = true
 
-	if (Input.is_action_just_pressed('use')):
+	if (Input.is_action_just_pressed('use') and direction == Vector2.ZERO ):
 		animation_tree["parameters/conditions/swing"] = true
 	else:
 		animation_tree["parameters/conditions/swing"] = false
 	if(direction != Vector2.ZERO):
-		animation_tree["parameters/idle/blend_position"] = direction
-		animation_tree["parameters/Walk/blend_position"] = direction
-		animation_tree["parameters/Swing/blend_position"] = direction
+		animation_tree["parameters/idle/blend_position"] = direction.x
+		animation_tree["parameters/moving/blend_position"] = direction.x
+		animation_tree["parameters/swing/blend_position"] = direction.x
